@@ -6,7 +6,8 @@
 .back-img4,
 .back-img5,
 .back-img6,
-.back-img7 {
+.back-img7,
+.back-img8 {
   position: relative;
   &::before {
     position: absolute;
@@ -87,6 +88,13 @@
     opacity: 0.4;
   }
 }
+.back-img8 {
+  &::before {
+    background-image: url("../images/background-img/web-10.jpg");
+    opacity: 0.55;
+    background-position: 50% 78%;
+  }
+}
 .back-color4 {
   background: rgb(200, 37, 7);
   background: linear-gradient(
@@ -147,12 +155,12 @@
   );
 }
 .dan {
-  background: rgb(158, 20, 21);
+  background: rgb(109, 8, 8);
   background: linear-gradient(
     180deg,
     rgb(109, 8, 8) 19%,
     rgb(143, 8, 8) 33%,
-    rgba(21, 21, 21, 1) 93%
+    rgb(24, 24, 24) 93%
   );
 }
 .spo {
@@ -265,7 +273,7 @@
 }
 .cc2 {
   background: rgb(10, 0, 59);
-  background: radial-gradient(circle, rgb(21, 0, 62) 0%, rgb(42, 42, 42) 70%);
+  background: radial-gradient(circle, rgb(31, 77, 112) 0%, rgb(36, 18, 72) 70%);
 }
 .colab {
   background: rgb(78, 18, 147);
@@ -331,4 +339,44 @@
     rgba(95, 4, 117, 0.87) 58%,
     rgba(5, 8, 89, 0.85) 84%
   );
+}
+.leadership {
+  background: rgb(89, 7, 7);
+  background: linear-gradient(
+    150deg,
+    rgb(89, 7, 7) 27%,
+    rgb(166, 0, 0) 60%,
+    rgb(89, 7, 7) 78%
+  );
+}
+.admin {
+  background: rgb(20, 20, 111);
+  background: linear-gradient(
+    90deg,
+    rgb(20, 20, 111) 20%,
+    rgb(35, 35, 149) 30%,
+    rgb(20, 20, 111) 68%
+  );
+}
+.media {
+  background: rgb(88, 67, 1);
+  background: linear-gradient(
+    180deg,
+    rgb(38, 42, 114) 0%,
+    rgb(172, 106, 40) 40%,
+    rgb(33, 21, 87) 80%
+  );
+}
+.webdev {
+  background: rgb(45, 110, 156);
+  background: linear-gradient(
+    180deg,
+    rgb(33, 21, 87) 0%,
+    rgb(4, 176, 136) 75%,
+    rgb(105, 4, 141) 100%
+  );
+}
+.volunteer-section {
+  background: rgb(49, 49, 49, 110, 156);
+  background: linear-gradient(180deg, rgb(105, 4, 141) 0%, rgb(45, 45, 45) 70%);
 }
