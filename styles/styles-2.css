@@ -120,17 +120,28 @@
   }
   padding: 10px;
 }
-.youtube-embed-sml {
+.youtube-embed-sml,
+.youtube-embed-sm2 {
   display: none;
 }
 .youtube-embed {
   display: block;
 }
-@media (max-width: 588px) {
+@media (min-width: 400px) and (max-width: 588px) {
   .youtube-embed-sml {
     display: block;
   }
-  .youtube-embed {
+  .youtube-embed,
+  .youtube-embed-sm2 {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .youtube-embed-sm2 {
+    display: block;
+  }
+  .youtube-embed,
+  .youtube-embed-sm1 {
     display: none;
   }
 }
