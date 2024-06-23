@@ -1,0 +1,88 @@
+.testimonials {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+  row-gap: 30px;
+  overflow: hidden;
+  background: rgb(70, 70, 70);
+  background: linear-gradient(
+    180deg,
+    rgba(70, 70, 70, 0.5) 0%,
+    rgba(39, 39, 39, 0.5) 100%
+  );
+  box-shadow: inset 0px 0px 28px rgba(0, 0, 0, 0.4);
+}
+.testimonials .testi-img {
+  height: 170px;
+  width: 170px;
+  @media (max-width: 768px) {
+    height: 140px;
+    width: 140px;
+  }
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.testimonials .testi-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.testi-slide p {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 0 100px;
+  font-weight: 400;
+  color: #efefef;
+}
+.testi-slide .quote-icon {
+  font-size: 3rem;
+  color: #8caaff;
+}
+.testi-slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details {
+  padding-top: 10px;
+}
+.details .name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #efefef;
+}
+.details .job {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #efefef;
+}
+.cont {
+  height: 100vh;
+  justify-content: center;
+}
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  transform: translateY(30px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 0.5rem;
+  color: #fff;
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.swiper-pagination-bullet-active {
+  background-color: rgb(97, 255, 97);
+}

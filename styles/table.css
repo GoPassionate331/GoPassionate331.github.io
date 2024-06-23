@@ -1,0 +1,60 @@
+table tr {
+  font-size: 1.6rem;
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #323232;
+}
+th,
+td {
+  padding: 1.6rem;
+}
+th {
+  background: rgba(0, 0, 0, 0.3);
+}
+tr:nth-of-type(2n) {
+  background: rgba(0, 0, 0, 0.08);
+}
+.table-sortable th {
+  cursor: pointer;
+}
+.table-sortable .th-sort-asc::after {
+  content: "\25b4";
+}
+.table-sortable .th-sort-desc::after {
+  content: "\25be";
+}
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+  margin-left: 5px;
+}
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+  background: rgba(0, 0, 0, 0.1);
+}
+.Anchor {
+  background-color: rgb(193, 13, 13);
+}
+.Anchor:nth-of-type(2n) {
+  background-color: rgb(155, 30, 30);
+}
+.Senior {
+  background-color: rgb(128, 39, 212);
+}
+.Senior:nth-of-type(2n) {
+  background-color: rgb(104, 32, 171);
+}
+.Associate {
+  background-color: rgb(52, 85, 169);
+}
+.Associate:nth-of-type(2n) {
+  background-color: rgb(39, 75, 142);
+}
+.Junior {
+  background-color: rgb(37, 127, 73);
+}
+.Junior:nth-of-type(2n) {
+  background-color: rgb(29, 112, 54);
+}

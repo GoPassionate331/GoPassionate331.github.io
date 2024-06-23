@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volunteer Hours</title>
+    <link rel="stylesheet" href="styles/table.css" />
+    <link rel="stylesheet" href="styles/styles-1.css" />
+    <link rel="stylesheet" href="styles/background.css" />
+    <link rel="stylesheet" href="styles/styles-2.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="header">
+      <div class="hamburg-side" id="btn">
+        <img src="icons/header/Hamburger_menu.png" />
+      </div>
+      <nav class="sidebar">
+        <ul>
+          <li>
+            <a href="index.html" class="side-icon">
+              <div class="icon-div">
+                <img
+                  src="icons/sidebar/home.png"
+                  class="icon inverted"
+                  style="width: 75%"
+                />
+              </div>
+              <span class="tooltip-side">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="blogs-page.html">
+              <div class="icon-div">
+                <img src="icons/sidebar/blogs.png" class="icon" />
+              </div> </a
+            ><span class="tooltip-side">Blogs</span>
+          </li>
+          <li>
+            <a href="events.html">
+              <div class="icon-div">
+                <img
+                  src="icons/sidebar/events.png"
+                  class="icon"
+                  style="width: 100%"
+                />
+              </div> </a
+            ><span class="tooltip-side">Events</span>
+          </li>
+          <li>
+            <a href="index.html#contactForm">
+              <div class="icon-div">
+                <img src="icons/sidebar/contact.png" class="icon" />
+              </div> </a
+            ><span class="tooltip-side">Contact Us</span>
+          </li>
+          <li>
+            <a href="hours.html">
+              <div class="icon-div">
+                <img
+                  src="icons/sidebar/hours.png"
+                  class="icon"
+                  style="width: 100%"
+                />
+              </div> </a
+            ><span class="tooltip-side">Volunteer Hours</span>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-title"><a href="index.html">NSS MIT-BLR</a></div>
+      <!-- <div class="Home-Socials"> -->
+      <div class="icons-div">
+        <div class="tooltip">
+          <a
+            href="https://www.instagram.com/nss.mitblr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            ><img src="icons/header/instagram.png" class="icons round" /><span
+              class="tooltiptext"
+              >Instagram</span
+            ></a
+          >
+        </div>
+        <div class="tooltip">
+          <a
+            href="https://linkedin.com/company/national-service-scheme"
+            target="_blank"
+          >
+            <img src="icons/header/linkedIn.png" class="icons inverted" /><span
+              class="tooltiptext"
+              >LinkedIn</span
+            >
+          </a>
+        </div>
+        <div class="tooltip">
+          <a
+            href="https://manipal.edu/mu/campuses/mahe-bengaluru.html"
+            target="_blank"
+            ><img
+              src="icons/header/manipal_home.png"
+              class="icons inverted"
+            /><span class="tooltiptext">About MITBLR</span></a
+          >
+        </div>
+        <div class="tooltip">
+          <a
+            href="https://www.google.com/maps/place/Manipal+Academy+of+Higher+Education,+Bengaluru/13.1233297,77.5896128,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae19d502aa02b3:0xb31f075ede4c71ab!8m2!3d13.1233297!4d77.5921877!16s%2Fg%2F11sqnl75nc?hl=en-GB&entry=ttu"
+            target="_blank"
+            ><img src="icons/header/location.png" class="icons inverted" /><span
+              class="tooltiptext"
+              >Location</span
+            ></a
+          >
+        </div>
+        <div class="tooltip">
+          <a href="https://nss.gov.in/" target="_blank"
+            ><img src="images/nsslogo.webp" class="icons" /><span
+              class="tooltiptext"
+              >National Service Scheme</span
+            ></a
+          >
+        </div>
+        <!-- </div> -->
+      </div>
+      <button class="hamburger-menu display-toggle">
+        <img src="icons/header/Hamburger_menu.png" class="icons" />
+      </button>
+    </nav>
+    <nav class="extended-header">
+      <button id="close">
+        <img src="icons/header/close.png" class="icons inverted" />
+      </button>
+      <div class="links">
+        <a href="blogs-page.html">Blogs</a>
+        <a href="events.html">Events</a>
+        <a href="index.html#contactForm">Contact Us</a>
+        <a href="hours.html">Volunteer Hours</a>
+      </div>
+      <div class="Home-Socials-extended">
+        <div class="icons-div">
+          <a
+            href="https://www.instagram.com/nss.mitblr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            ><img src="icons/header/instagram.png" class="icons round"
+          /></a>
+          <a
+            href="https://linkedin.com/company/national-service-scheme"
+            target="_blank"
+          >
+            <img src="icons/header/linkedIn.png" class="icons inverted" />
+          </a>
+          <a
+            href="https://manipal.edu/mu/campuses/mahe-bengaluru.html"
+            target="_blank"
+            ><img src="icons/header/manipal_home.png" class="icons inverted"
+          /></a>
+          <a
+            href="https://www.google.com/maps/place/Manipal+Academy+of+Higher+Education,+Bengaluru/13.1233297,77.5896128,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae19d502aa02b3:0xb31f075ede4c71ab!8m2!3d13.1233297!4d77.5921877!16s%2Fg%2F11sqnl75nc?hl=en-GB&entry=ttu"
+            target="_blank"
+            ><img src="icons/header/location.png" class="icons inverted"
+          /></a>
+          <a href="https://nss.gov.in/" target="_blank"
+            ><img src="images/nsslogo.webp" class="icons"
+          /></a>
+        </div>
+        <div class="home-div">
+          <button class="home-button"><a href="index.html">Home</a></button>
+        </div>
+      </div>
+    </nav>
+    <section class="section-3">
+      <div class="heading-div">
+        <h2 class="heading">Volunteers at NSS Unit MIT-Bengaluru</h2>
+      </div>
+    </section>
+    <section class="section-2 pad">
+      <div class="blog-div">
+        <p>
+          Within our unit, a cohort of 100 dedicated volunteers, under the
+          guidance of our Programme Officer and Unit Head, forms the bedrock of
+          our NSS community. These volunteers, a diverse ensemble of passionate
+          individuals, unite under the common purpose of service to society.
+          Organized into various ranks based on their dedication and
+          contribution, this vibrant collective embodies the essence of altruism
+          and commitment.
+        </p>
+        <p>
+          From the enthusiastic Junior Volunteers, just beginning their journey
+          and dedicated Associate Volunteers, who have expended hours, each rank
+          signifies a level of involvement and dedication. The Senior
+          Volunteers, showcase considerable experience, while the Anchor
+          Volunteers, exemplify leadership and steadfast commitment. At the
+          pinnacle, the Master Volunteers, having served 201 hours or more,
+          stand as paragons of dedication and impactful contribution.
+        </p>
+        <p>
+          Under the Unit Head's guidance, these ranks operate harmoniously,
+          blending diverse talents and experiences to execute multifaceted
+          projects. Their classification into distinct ranks serves not only as
+          a recognition of their dedication but also as a strategic approach to
+          channel their collective efforts effectively towards societal
+          betterment. Together, they form a formidable force, enriching lives,
+          and shaping a brighter future through their selfless service and
+          collaborative endeavors.
+        </p>
+      </div>
+    </section>
+    <section class="section-1">
+      <table class="table table-sortable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Number Of Hours</th>
+            <th>Rank</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="Anchor">
+            <td>Nishanth Shet</td>
+            <td>148</td>
+            <td>Anchor</td>
+          </tr>
+          <tr class="Anchor">
+            <td>Karthikeya</td>
+            <td>144</td>
+            <td>Anchor</td>
+          </tr>
+          <tr class="Senior">
+            <td>Pranav Athreya</td>
+            <td>89</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Anchor">
+            <td>Priyansi</td>
+            <td>111</td>
+            <td>Anchor</td>
+          </tr>
+          <tr class="Senior">
+            <td>Atharva</td>
+            <td>61</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Senior">
+            <td>Tarunika</td>
+            <td>64</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Anchor">
+            <td>Nihitha HR</td>
+            <td>124</td>
+            <td>Anchor</td>
+          </tr>
+          <tr class="Senior">
+            <td>Renuka</td>
+            <td>99</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Senior">
+            <td>Vedang</td>
+            <td>89</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Senior">
+            <td>Akshath</td>
+            <td>91</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Anchor">
+            <td>Meghna</td>
+            <td>102</td>
+            <td>Anchor</td>
+          </tr>
+
+          <tr class="Senior">
+            <td>Ravi Kumar</td>
+            <td>92</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Associate">
+            <td>Sarthak Jaryal</td>
+            <td>48</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Senior">
+            <td>Urmishika</td>
+            <td>68</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Senior">
+            <td>Sriram</td>
+            <td>77</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Senior">
+            <td>Koushik</td>
+            <td>82</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Associate">
+            <td>Kaushambhi</td>
+            <td>48</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Senior">
+            <td>Likhith</td>
+            <td>68</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Senior">
+            <td>Sreelakshmi</td>
+            <td>95</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Senior">
+            <td>Neha Reddy</td>
+            <td>56</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Senior">
+            <td>Rishabh Sankar</td>
+            <td>73</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Senior">
+            <td>Shreya Mallick</td>
+            <td>57</td>
+            <td>Senior</td>
+          </tr>
+
+          <tr class="Associate">
+            <td>Dhruv</td>
+            <td>44</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Senior">
+            <td>Divyansh Mishra</td>
+            <td>68</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Associate">
+            <td>Krish Selot</td>
+            <td>50</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Senior">
+            <td>Ruchitankshi</td>
+            <td>74</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Senior">
+            <td>Chetan</td>
+            <td>81</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Associate">
+            <td>Shagun Jajodia</td>
+            <td>42</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Senior">
+            <td>Manoj</td>
+            <td>69</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Senior">
+            <td>Vaishnavi D</td>
+            <td>61</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Senior">
+            <td>Ruheena</td>
+            <td>62</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Associate">
+            <td>T Pranav</td>
+            <td>48</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Associate">
+            <td>Harsh Singh</td>
+            <td>34</td>
+            <td>Associate</td>
+          </tr>
+
+          <tr class="Senior">
+            <td>Aishwarya</td>
+            <td>67</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Senior">
+            <td>Kajol</td>
+            <td>62</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Associate">
+            <td>Krishika</td>
+            <td>34</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Senior">
+            <td>Deekshith</td>
+            <td>57</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Associate">
+            <td>Jeevan Reddy</td>
+            <td>30</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Associate">
+            <td>Mohana</td>
+            <td>30</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Associate">
+            <td>Arya Gupta</td>
+            <td>36</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Associate">
+            <td>Bhumika</td>
+            <td>28</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Anchor">
+            <td>Shashi Pritam</td>
+            <td>114</td>
+            <td>Anchor</td>
+          </tr>
+          <tr class="Senior">
+            <td>Jhagruth</td>
+            <td>72</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Associate">
+            <td>Anshitha</td>
+            <td>49</td>
+            <td>Associate</td>
+          </tr>
+
+          <tr class="Anchor">
+            <td>Medha Udupa</td>
+            <td>114</td>
+            <td>Anchor</td>
+          </tr>
+          <tr class="Associate">
+            <td>V Sathya Sathvika</td>
+            <td>30</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Senior">
+            <td>Vaishnavi Ashopa</td>
+            <td>70</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Mayank</td>
+            <td>20</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Senior">
+            <td>Aishvi Bansal</td>
+            <td>84</td>
+            <td>Senior</td>
+          </tr>
+          <tr class="Associate">
+            <td>Bhawana Agrawal</td>
+            <td>29</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Associate">
+            <td>Ishan Chakraborty</td>
+            <td>34</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Associate">
+            <td>Mitali Verma</td>
+            <td>40</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Associate">
+            <td>Pakhi Manya</td>
+            <td>40</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Junior">
+            <td>Sathwik</td>
+            <td>18</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>DV Phani Geethika</td>
+            <td>16</td>
+            <td>Junior</td>
+          </tr>
+
+          <tr class="Associate">
+            <td>Kalash Pratyay</td>
+            <td>28</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Junior">
+            <td>Samhit Reddy</td>
+            <td>14</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Associate">
+            <td>Shadeeksha Shree</td>
+            <td>30</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Associate">
+            <td>B S Tahreem Javeria</td>
+            <td>35</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Associate">
+            <td>Shuvishka</td>
+            <td>26</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Junior">
+            <td>Prabhat</td>
+            <td>19</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Nidhessh</td>
+            <td>6</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Rishita</td>
+            <td>6</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Shivam Naik</td>
+            <td>6</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Hardik</td>
+            <td>4</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Gouri Jayan</td>
+            <td>2</td>
+            <td>Junior</td>
+          </tr>
+
+          <tr class="Associate">
+            <td>Manasvi Mathur</td>
+            <td>36</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Junior">
+            <td>Nidhi Gupta</td>
+            <td>2</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Associate">
+            <td>Kavin</td>
+            <td>44</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Junior">
+            <td>Raghav Garg</td>
+            <td>16</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Sreya</td>
+            <td>22</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Ekansh</td>
+            <td>24</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Chirag</td>
+            <td>12</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Colin</td>
+            <td>12</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Associate">
+            <td>Devanshi</td>
+            <td>38</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Junior">
+            <td>Harsh Behl</td>
+            <td>16</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Supreeth Reddy</td>
+            <td>12</td>
+            <td>Junior</td>
+          </tr>
+
+          <tr class="Junior">
+            <td>Yash Parikh</td>
+            <td>12</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Associate">
+            <td>Sakarey Parangi Bharat</td>
+            <td>47</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Junior">
+            <td>Rishabh Aggarwal</td>
+            <td>24</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Samarth Biradar</td>
+            <td>10</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Sirmisha Darru</td>
+            <td>22</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Srushti S Kiruvase</td>
+            <td>16</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Abhinav</td>
+            <td>8</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Manya Arora</td>
+            <td>24</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Associate">
+            <td>Palak Bhardwaj</td>
+            <td>34</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Junior">
+            <td>Sooryan</td>
+            <td>6</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Surya</td>
+            <td>6</td>
+            <td>Junior</td>
+          </tr>
+
+          <tr class="Junior">
+            <td>Trisha</td>
+            <td>6</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Vamsi</td>
+            <td>24</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Dhruv Shivakumar</td>
+            <td>4</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Rishit Nair</td>
+            <td>2</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Suyash Singh</td>
+            <td>2</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Vishan</td>
+            <td>2</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Aditya Jain</td>
+            <td>10</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Associate">
+            <td>Teesha</td>
+            <td>38</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Junior">
+            <td>Arsh</td>
+            <td>22</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Junior">
+            <td>Khasib</td>
+            <td>20</td>
+            <td>Junior</td>
+          </tr>
+          <tr class="Associate">
+            <td>Yatin</td>
+            <td>31</td>
+            <td>Associate</td>
+          </tr>
+          <tr class="Junior">
+            <td>Priyam</td>
+            <td>24</td>
+            <td>Junior</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="embed.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
