@@ -43,16 +43,6 @@ t1.from(".carousel", {
   width: "50%",
   ease: "power2.out",
 });
-/*const car = document.querySelector(".carousel");
-console.log(car);
-function hoverEnlarge() {
-  gsap.to(car, {
-    width: "90%",
-  });
-}
-car.addEventListener("mouseover", hoverEnlarge);
-car.removeEventListener("mouseout", hoverEnlarge);
-*/
 
 //Swiper JS
 var swiper = new Swiper(".mySwiper", {
@@ -68,42 +58,3 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-// general animation
-// var sections = gsap.utils.toArray([".section-1", ".section-2", ".section-3"]);
-
-// sections.forEach((section) => {
-//   var t2 = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: section,
-//       start: "top center",
-//       end: "bottom center",
-//       scrub: false,
-//       markers: true,
-//       toggleActions: "play none none reverse",
-//     },
-//   });
-
-//   const cc = section.querySelectorAll([".core-commitee-img-container"]);
-//   t2.from(cc, {
-//     scale: 2,
-//     opacity: 0,
-//     ease: "power2.out",
-//   });
-//   const p = section.querySelectorAll(["h1", "h2", "h3", "p", "img", "button"]);
-//   t2.from(p, {
-//     opacity: 0,
-//     scale: 2,
-//     ease: "power2.out",
-//   });
-//   // gsap.from(section, {
-//   //   opacity: 0,
-//   //   scale: 2,
-//   //   ease: "power2.in",
-//   //   scrollTrigger: {
-//   //     trigger: section,
-//   //     start: "top center",
-//   //     end: "center center",
-//   //     toggleActions: "play none none reverse",
-//   //   },
-//   // });
-// });
