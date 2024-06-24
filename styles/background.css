@@ -380,3 +380,37 @@
   background: rgb(49, 49, 49, 110, 156);
   background: linear-gradient(180deg, rgb(105, 4, 141) 0%, rgb(45, 45, 45) 70%);
 }
+.blur-load {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blur-load::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  animation: pulse 2s infinite;
+}
+.blur-load.loaded::before {
+  content: none;
+  animation: none;
+}
+@keyframes pulse {
+  0% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.blur-load.loaded > img {
+  opacity: 1;
+}
+.blur-load > img {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}

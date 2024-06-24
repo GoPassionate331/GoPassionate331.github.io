@@ -320,6 +320,7 @@
 .collaborations-img-container,
 .core-commitee-img-container-2 {
   max-width: 450px;
+  min-width: 300px;
   aspect-ratio: 31/35;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
